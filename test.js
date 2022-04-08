@@ -13,11 +13,14 @@ var driver = new webdriver.Builder()
   
 
     describe( 'Test Suite' , function(){
+     //gives extra time to run test
       this.timeout(15000);
       before(function(){
    
           driver.get( "https://test.invrs.com/home" );
+       //couldnt find an id or classname for the login button.
           driver.get( "https://test-app.invrs.com/index.html#/login" );
+       //create enviroment variables for username and password
           driver.findElement(webdriver.By.id("username")).sendKeys("faiz.muhammad1002@gmail.com");
           driver.findElement(webdriver.By.id("password")).sendKeys("testing1");
    
