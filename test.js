@@ -4,13 +4,10 @@ const chromedriver = require('chromedriver');
 
 chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
 
- 
 var driver = new webdriver.Builder()
     .forBrowser('chrome')
     .setChromeOptions()
     .build();
-
-  
 
     describe( 'Test Suite' , function(){
      //gives extra time to run test
