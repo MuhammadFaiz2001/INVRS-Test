@@ -32,7 +32,6 @@ var driver = new webdriver.Builder()
    
       it( 'Test Case', function(){
         
-        
          var condition = webdriver.until.elementLocated(webdriver.By.className('p-autocomplete-input p-inputtext p-component'));
          //wait until page loads
          return driver.wait(condition, 10000);
