@@ -7,7 +7,7 @@ chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
  
 var driver = new webdriver.Builder()
     .forBrowser('chrome')
-    .setChromeOptions( /* … */)
+    .setChromeOptions()
     .build();
 
   
