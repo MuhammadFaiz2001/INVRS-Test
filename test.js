@@ -20,10 +20,7 @@ var driver = new webdriver.Builder()
           driver.get( "https://test-app.invrs.com/index.html#/login" );
           driver.findElement(webdriver.By.id("username")).sendKeys("faiz.muhammad1002@gmail.com");
           driver.findElement(webdriver.By.id("password")).sendKeys("testing1");
-          // a promise is returned while ‘click’ action
-          // is registered in ‘driver’ object
-          
-          
+   
            return driver.findElement(webdriver.By.className("p-button p-component sign-in-button")).click();
       });
    
